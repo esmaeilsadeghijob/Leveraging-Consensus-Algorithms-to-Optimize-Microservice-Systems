@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  name: gateway-service
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+    application:
+      name: gateway
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
